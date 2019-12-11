@@ -1,11 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Oswald:600");
 
-/*
-	Standout by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2457,18 +2452,20 @@ input, select, textarea {
 
 		.image.right {
 			float: right;
-			margin: 0 0 1rem 1.5rem;
-			top: 0.25rem;
+			margin: 5 5 5rem 5rem;
+			top: 1rem;
 		}
 
 		.image.fit {
 			display: block;
 			margin: 0 0 2rem 0;
-			width: 100%;
+			width: 85%;
+			float: center;
 		}
 
 			.image.fit img {
-				width: 100%;
+				width: 85%;
+				float: center;
 			}
 
 		.image.main {
@@ -2477,7 +2474,19 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main img {
+		.image.main img {
+			width: 100%;
+		}
+		
+		
+		.image.design {
+			display: inline-block;
+			margin: 5 5 3rem 5;
+
+			width: 100%;
+		}
+
+			.image.design img {
 				width: 100%;
 			}
 
@@ -3294,8 +3303,9 @@ input, select, textarea {
 	}
 
 	.gallery {
-		column-gap: 2rem;
-		columns: 3;
+		column-gap: 4rem;
+		columns: 1;
+		margin: 5px;
 		margin: 0 0 2rem 0;
 		width: 100%;
 	}
@@ -3313,7 +3323,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.gallery {
-				columns: 2;
+				columns: 1;
 			}
 
 		}
@@ -4072,7 +4082,10 @@ input, select, textarea {
 		}
 
 			#banner input[type="submit"]:after,
-			#banner input[type="reset"]:after,
+			#banner input[type="reset"]:after, margin: 5px;
+			border: 1px solid #ccc;
+			float: left;
+			width: 180px;
 			#banner input[type="button"]:after,
 			#banner button:after,
 			#banner .button:after {
