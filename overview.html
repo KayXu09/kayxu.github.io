@@ -161,9 +161,21 @@
 									<p>In our network, each node represents a restaurant, a user can review several different restaurants and a restaurant can be reviewed by multiple users. For a  restaurant, the more reviews it has, the higher degree it will have, the size of the node will become bigger. </p>
 									</header>
 									<a href="#" class="image design"><img src="images/slides/random network2.PNG" alt="" /></a>
-									<p>unc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
+									<p>The biggest one is node size porportional to its degree, the top right hand side one is the node size proportional to eigenvector centrality whilst the bottom right hand sidre one is node size proportional to betweeness centrality. The color for each node is based on its review count. The higher review count a restaurant has, the darker color it will have. The threshold are 25,50,75,100,150,200,400 and 600, based on the analysis from review count distribution we did secretly.
+											In random network, there are lots of nodes in the centre of the network that have high view count. Obviously, they also have high degree, as we can see from their dark blue colors. 
+											
+											A high eigenvector centrality for a given node, means that the node itself is connected to a lot of nodes with high scores. However, since there is not that big difference in terms of the node size for each node in this network, we can say that the nodes are connected without that much preference(since they are in random network and they are not person!).
+											
+											
+											Since betweenness is based on how many times a node appear in a shortest path, the above result probably means that the restaurant nodes connect to each other a lot but is less connected to the rest of the network. From the plot for random network, we can infer that the higher review count a restaurant has, a higher betweenness centrality it will has.</p>
 									<a href="#" class="image design"><img src="images/slides/random network1.PNG" alt="" /></a>
-									<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
+									<p>In the left big plot for friend network, node size is proportional to its degree, since the number of restaurants and users are smaller than random network, the size of each node is also smaller than those in random network. It is quite obvious that the nodes are divided into three clusters. Probably it means there are three main groups of restaurants in which people usually visit? We will see a clearer answer in the community detection below.
+
+
+											It is even more obvious that the nodes in friend network are divided into three big groups. The plot for eigenvector in friend network differs from the one in random network. The nodes with the biggest size are clustered together, middel size nodes are together and smallest nodes get together. We can infer that the people in friend network have their preference. They will visit the restaurant which are connected to a lot of other restaurants(nodes) with high degrees.
+											
+											
+											Regarding the betweeness plot in friend network, it is quite obvious that some of the nodes in it is much bigger than the nodes in random network. It probably means that there is a group of restaurant nodes connect to each other a lot and also connect to the rest of the network.</p>
 									
 								</div>
 								<div class="gallery">		
