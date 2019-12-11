@@ -139,9 +139,9 @@
 								<p>In our network, each node represents a restaurant, a user can review several different restaurants and a restaurant can be reviewed by multiple users. For a  restaurant, the more reviews it has, the higher degree it will have, the size of the node will become bigger. </p>
 								</header>
 								<a href="#" class="image left"><img src="images/slides/random network.PNG" alt="" /></a>
-								<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
+								<p>As we can see from the plot in Random network, there is no clear cluster inside. Most of the restaurants are in the centre of the network with higher degrees than those on the edge of the network It is reasonable to say that the restaurants in the centre of network are located in the centre of Charlotte, and the restaurants with low degree are located in the rural area of Charlotte. Most of the people prefer visiting the restaurant around city area since more people live in the city than rural area.</p>
 								<a href="#" class="image right"><img src="images/slides/friend network.PNG" alt="" /></a>
-								<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipi
+								<p>The friend network is a little bit different from random network. There are some small clusters among the entire network, probably it is because a group of people(friends) are more likely to visit the restaurants in one specific area around their living place. It seems that the friend network is sparser than random network. But if we look into the density, the density in friend network is higher than it is in random network(0.28 vs 0.26).For instance, a family reunion has high network density, but a public bus has low network density. So it means that our friend network is not sparser than random network as you might see from the plot.</p>
 								
 								
 								<div class="gallery">		
@@ -150,10 +150,10 @@
 									<p>In our network, each node represents a restaurant, a user can review several different restaurants and a restaurant can be reviewed by multiple users. For a  restaurant, the more reviews it has, the higher degree it will have, the size of the node will become bigger. </p>
 									</header>
 									<a href="#" class="image left"><img src="images/slides/random network3.PNG" alt="" /><img src="images/slides/random network4.PNG" alt="" /></a>
-									<p>The degree distribution found in figure 4 looks like a power law, but since the function is not very well behaved, which might be due to the underlying community structure of the network, it can not be definately stated, that it is a power law. (Running a linear regression returned 
+									<p>By plotting on a log-log scale, the review length distribution plots for random and friend network above show that both random and friend network are not Scale-free networks. However, regarding the random network, the regular plot shows that the degree will decrease whilst the number of nodes is decreasing. It is quite surprising that one fifth of the total restaurants have the degree around 500. From personal perspective, I assume that there are mainly two groups of people, and for each group, the people inside have lots of visited restaurants in common, Maybe it is the reason why the degree for these nodes is only around half of the highest degree.
 									</p>
 									
-									<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.</p>
+							
 								</div>	
 								<div class="gallery">		
 									<header class="major special">
@@ -161,7 +161,7 @@
 									<p>In our network, each node represents a restaurant, a user can review several different restaurants and a restaurant can be reviewed by multiple users. For a  restaurant, the more reviews it has, the higher degree it will have, the size of the node will become bigger. </p>
 									</header>
 									<a href="#" class="image design"><img src="images/slides/random network2.PNG" alt="" /></a>
-									<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
+									<p>unc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
 									<a href="#" class="image design"><img src="images/slides/random network1.PNG" alt="" /></a>
 									<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
 									
@@ -183,52 +183,51 @@
 									<div class="gallery">		
 											<header class="major special">
 											<h2>Review Overview</h2>
+											<p>Why do 4 /5 reviews have longer review text?</p>
 											</header>
-											<p>The review overview section includes the xxxxxx</p>
 											<a href="#" class="image design"><img src="images/slides/review length.png" alt="" /></a>
-											
-
-
-
-
-
-
-
+											<p>The review of random network and friend network have a little bit difference. In friend network the longest review length is in the four-star reviews, but in random network is five - star reviews. It is easy to understand that some would recommend good restaurant to other friends, that’s normally how friendship network works. There is a positive effect, if you have had a positive experience in a restaurant you will leave a positive review and recommend to your social circle who might not all share the common interests, but more than likely would also like this type of business, and this will keep the rippling through like a positive effect.</p>
 									<div class="gallery">
 											<header class="major special">
 											<h2>VADER</h2>		
-											<p>The VADER or ‘Valence Aware Dictionary and sentiment Reasoner’ method uses a sentiment and rule-based lexicon, it is designed to work primarily with text from social media, i.e. tweets, or micro- blogs as it has been described by Hutto and Gilbert (2014). Doing a VADER sentiment analysis on text results in a positive, negative, neutral, and compound score for the text piece. The compound score is the sum of the other three and gives an indication of the general attitude of the text. The score ranges from a negative response = -1 to a positive one = 1. The VADER scores are scaled so a score between 0.5 and 1 is considered positive, a score between -0.5 to 0.5 is considered neutral, and a score below -0.5 is considered negative (Zhou 2019) </p>
+											<p>The VADER or ‘Valence Aware Dictionary and sentiment Reasoner’ method uses a sentiment and rule-based lexicon. Doing a VADER sentiment analysis on text results in a positive, negative, neutral, and compound score for the text piece. The compound score is the sum of the other three and gives an indication of the general attitude of the text. The score ranges from a negative response = -1 to a positive one = 1. The VADER scores are scaled so a score between 0.5 and 1 is considered positive, a score between -0.5 to 0.5 is considered neutral, and a score below -0.5 is considered negative (Zhou 2019) </p>
 											</header>
 											
 											
 											<a href="#" class="image design"><img src="images/slides/random-network.png" alt="" /></a>
-											<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
+											<p>We have chosen the top 3 degree highest restaurants, which means this 3 restaurant will have higher chance to be recommended. For higher rating reviews(4 and 5), these reviews are mainly gathering in positive area, but still have some five- star reviews have negative text.  For the reviews left by patrons giving 4 or 5 ratings we clearly see that the majority of the reviews have positively loaded sentiment scores as evident by the lower quartile being well above the 0.5 mark.  </p>
 											<a href="#" class="image design"><img src="images/slides/friend-network.png" alt="" /></a>
-											<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipi
+											<p>It is surprising to see that in friendship network top 3 highest degree restaurants, there are no one - star reviews. It can be understood that if a user has been recommended a restaurant by a friend, which means even the restaurant has short length of reviews still have good reputation and high rates, which also means the recommendation list not only recommend most popular restaurant but also recommend less lower rating but from your friends have visited. There is only in total 25 pieces of reviews of top 3 highest degree restaurants, so it is insufficient to prove the correlation between each pair of features.</p>
 											
 												
 											</p>
 											<div class="gallery">		
 												<header class="major special">
 												<h2>Boxplot</h2>
+												<p>Are the high rating reviews all positve?</p>
+												</header>
 												<a href="#" class="image left"><img src="images/slides/random_review_boxplot.png" alt="" /></a>
 												<a href="#" class="image left"><img src="images/slides/friend_review_boxplot.png" alt="" /></a>
-
+												<p>The box plot illustrates the connection between rating and review sentiment for random network(Left) and friend network(Right).The left plot shows the sentiment score for patrons who left a one-star rate. 
+														We see that the span of the sentiment score with one star rating are very wide. There are some reviews that obtained a positively loaded score, which is evident by the upper quartile being above 0.5.It is interesting to see that all the two-star rates are either positive reviews or neutral, which are in the interval of 0 to 0.8. The same phenomenon happens in friend network in three-star reviews. There are even a few outliers who seems extremely discontented in their written review with a VADER compound score well below -0.5, but still gives the restaurant a high rating.</p>
+												<p>In the left figure, there are a lot of outliers in four and five reviews, they occur more frequently for the random network considering the size difference between the samples of reviews from this two networks.
+														When reviewers write neutrally or negatively even though they leave a high rating. Overall, we observed a tendency towards more similarities in sentiments in the reviews form random network and friend network. For the reviews left 4 or 5 ratings in left figure we clearly see that the majority of the reviews are positive.
+														</p>
 												</div>
 											<div class="gallery">		
 													<header class="major special">
 													<h2>Preference</h2>
+													</header>
 													<a href="#" class="image design"><img src="images/slides/preference all.png" alt="" /></a>
+													<p>In both random network and friend network, we have not carried out positive or negative classification. From the six word clouds, it can be seen that most users give positive reviews to the restaurant, such as ‘good’, ‘great’, and we can see that they also mentioned about the restaurant's name and categories, for example, ‘Amelie’,’burger’, ’sushi’.</p>
 													</div>
 											</li>
 								<li>
 										<h3>Summary</h3>
-										<div class="gallery">
-												<p>In our network, each node represents a restaurant, a user can review several different restaurants and a restaurant can be reviewed by multiple users. For a  restaurant, the more reviews it has, the higher degree it will have, the size of the node will become bigger. </p>
+											<div class="gallery">
+												<header>
+												<h2>Does the most popular restaurant have the highest degree?</h2>
 												</header>
-												<a href="#" class="image left"><img src="images/slides/random network.PNG" alt="" /></a>
-												<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
-												<h3>Does the most popular restaurant have the highest degree?</h3>
 										<div>
 											<table>
 												<thead>
@@ -270,40 +269,32 @@
 													
 													</tr>
 													<tr>
-														<td>is_open</td>
-														<td>The status of each busniess</td>
+														<td>Friend</td>
+														<td>Trader Joe's</td>
+														<td>'Flowers & Gifts, Florists, Specialty Food, Beer, Wine & Spirits, Grocery, Food, Shopping</td>
+														<td>1095</td>
+														<td>4.5</td>
+														<td>167</td>
 														
 													</tr>
 													<tr>
-														<td>latitude/longitude</td>
-														<td>Location</td>
-														
+														<td>Friend</td>
+														<td>Diamond Restaurant</td>
+														<td>'Diners, American (New), Restaurants, Southern</td>
+														<td>1039</td>
+														<td>4.5</td>
+														<td>357</td>
+													
 													</tr>
 													<tr>
-														<td>name</td>
-														<td>Business name</td>
+														<td>Friend</td>
+														<td>The EpiCentre</td>
+														<td>Shopping Centers, Bars, Restaurants, Nightlife, Shopping</td>
+														<td>1038</td>
+														<td>3.5</td>
+														<td>101</td>
 														
-													</tr>
-													<tr>
-														<td>review_star</td>
-														<td>Evaluation of review from each user</td>
-														
-													</tr>
-													<tr>
-														<td>restaurant_star	</td>
-														<td>Rating of each restaurant</td>
-														
-													</tr>
-													<tr>
-														<td>reviews</td>
-														<td>Text evaluation from each user</td>
-														
-													</tr>
-													<tr>
-														<td>friend</td>
-														<td>Friendship of each user</td>
-														
-													</tr>
+													</tr>	
 												</tbody>
 												<tfoot>
 													<tr>
@@ -313,7 +304,7 @@
 												</tfoot>
 											</table>
 										</div>
-													
+										<p>We can see that the list descends from top to bottom, in the random network and the friend network, respectively. From the random network, we can say that the answer is "YES", the higher the degree, the higher the review counts and the higher (four points) rating. But we can't get the same answer from the friend network. We see 'The Epicentre' which has the same degree as the 'Diamond Restaurant' (only 1 difference), but the former has far less reviews and ratings than the latter. From the friend network, the number one restaurant can also prove this, it has received 167 reviews, but his degree is much higher than the remaining two.</p>			
 									
 								
 							
