@@ -41,41 +41,114 @@
 							<ul class="tabs">
 								<li>
 									<h3>Overall</h3>
-									<h4>Data</h4>
-									<div class="gallery">
-									<div>
-									<a href="#" class="image fit"><img src="images/slides/data.PNG" alt="" /></a>
-									<h4>Charlotte</h4>
-									<a href="#" class="image fit"><img src="images/slides/xialuote.PNG" alt="" /></a>
-									<h4>Random Network(degree>=2)</h4>
-									<a href="#" class="image fit"><img src="images/slides/suijinetwork.PNG" alt="" /></a>
-									<h4>Friend Network</h4>
-									<a href="#" class="image fit"><img src="images/slides/pengyounetwork.PNG" alt="" /></a>
-									</div>
-									</div>
+									
 
 
 									<h4>Video</h4>
 										<div>
 												<iframe width="560" height="315"  src="https://www.youtube.com/embed/QTF_tQ-s4fw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-										</div>
+												<p>Because of the GDPR, we cannot get the data in Denmark from Yelp. So we have to use the data from Yelp America to construct our model. Without the limitation of GDPR, it’s possible to use our method in Denmark and other European countries as well. </p> 
+											</div>
 									<div class="gallery">
-										<p><span class="image right"><img src="images/slides/tupian.jpg" alt="" /></span> <p>will be a link between two restaurants when they are reviewed by the same person. If a restaurant has been reviewed by two different people, this restaurant will be connected with all the other restaurants that have reviewed by these two people.The distance between two different nodes is based on the longitude and latitude. </p> <p>And the correlation between them is based on sentiment analysis, if there are more negative reviews for a restaurant, it means that the more negative correlation between this node and other linked nodes and vice versa.</p></p>
+										<h4>Network</h4>
+										<p><span class="image right"><img src="images/slides/tupian.jpg" alt="" /></span> <p>In our project, there will be a link between two restaurants when they are reviewed by the same person. If a restaurant has been reviewed by two different people, this restaurant will be connected with all the other restaurants that have reviewed by these two people.The distance between two different nodes is based on the longitude and latitude. </p> <p>And the correlation between them is based on sentiment analysis, if there are more negative reviews for a restaurant, it means that the more negative correlation between this node and other linked nodes and vice versa.</p></p>
 									</div>
 									<div>
+										<h4>Map</h4>
+											<p>We have used Folium function to visualize the location of each business in Charlotte area. It shows below, left one is random users location map and right one is friendship users network map. It is easy to be found that random users map has more businesses in the city centre but in the friendship network most of businesses are in the south of the city.</p>
 											<iframe
 											width="560"
 											height="315"
 											frameborder="" style="border:0"
 											src="file:///Users/kaiyuexu/Desktop/random_map.html" allowfullscreen>
 											</iframe>
+											<iframe
+											width="560"
+											height="315"
+											frameborder="" style="border:0"
+											src="file:///Users/kaiyuexu/Desktop/friend_map.html" allowfullscreen>
+											</iframe>
 									</div>
+									<li>
+										<h3>Variables / Features</h3>
+										<div>
+											<table>
+												<thead>
+													<tr>
+														<th>Variable</th>
+														<th>Description</th>
+														
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>business_id</td>
+														<td> 22-character unique string </td>
+														
+													</tr>
+													<tr>
+														<td>user_id</td>
+														<td>22-character unique string(user indefication number)/td>
+														
+													</tr>
+													<tr>
+														<td>categories</td>
+														<td>An array of strings of business categories</td>
+														
+													</tr>
+													<tr>
+														<td>is_open</td>
+														<td>The status of each busniess</td>
+														
+													</tr>
+													<tr>
+														<td>latitude/longitude</td>
+														<td>Location</td>
+														
+													</tr>
+													<tr>
+														<td>name</td>
+														<td>Business name</td>
+														
+													</tr>
+													<tr>
+														<td>review_star</td>
+														<td>Evaluation of review from each user</td>
+														
+													</tr>
+													<tr>
+														<td>restaurant_star	</td>
+														<td>Rating of each restaurant</td>
+														
+													</tr>
+													<tr>
+														<td>reviews</td>
+														<td>Text evaluation from each user</td>
+														
+													</tr>
+													<tr>
+														<td>friend</td>
+														<td>Friendship of each user</td>
+														
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+								</li>   
+					
 								</li>
 								<li>
-										<h3>Network</h3>
-										<div class="gallery">
-												<h2>Random & Friend Network</h2>		
-												<p>In our network, each node represents a restaurant, a user can review several different restaurants and a restaurant can be reviewed by multiple users. For a  restaurant, the more reviews it has, the higher degree it will have, the size of the node will become bigger. </p>
+								<h3>Network</h3>
+								<div class="gallery">
+								<header class="major special">
+								<h2>Random & Friend Network</h2>		
+								<p>In our network, each node represents a restaurant, a user can review several different restaurants and a restaurant can be reviewed by multiple users. For a  restaurant, the more reviews it has, the higher degree it will have, the size of the node will become bigger. </p>
 								</header>
 								<a href="#" class="image left"><img src="images/slides/random network.PNG" alt="" /></a>
 								<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
@@ -93,18 +166,66 @@
 								</p>
 								
 								<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.</p>
+								<div class="gallery">		
+										<header class="major special">
+										<h2>Network plots</h2>
+										<p>In our network, each node represents a restaurant, a user can review several different restaurants and a restaurant can be reviewed by multiple users. For a  restaurant, the more reviews it has, the higher degree it will have, the size of the node will become bigger. </p>
+										</header>
+										<a href="#" class="image left"><img src="images/slides/random networkplot.PNG" alt="" /><img src="images/slides/friend networkplot.PNG" alt="" /></a>
+										<p>The degree distribution found in figure 4 looks like a power law, but since the function is not very well behaved, which might be due to the underlying community structure of the network, it can not be definately stated, that it is a power law. (Running a linear regression returned 
+										</p>
+										
+										<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.</p>
+								
+										<div class="gallery">		
+										<header class="major special">
+										<h2>Coummnity detection</h2>
+										<p>In our network, each node represents a restaurant, a user can review several different restaurants and a restaurant can be reviewed by multiple users. For a  restaurant, the more reviews it has, the higher degree it will have, the size of the node will become bigger. </p>
+										</header>
+										<a href="#" class="image left"><img src="images/slides/Random Network, Community detection using the Force Atlas algorithm.PNG" alt="" /></a>
+										<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
+										
+										
+									</div>
+												
+
+
+
+
+
+
+
+
 								</li>	
 								<li>
 									<h3>Sentiment</h3>
 									<div class="gallery">
+											<header class="major special">
 											<h2>VADER</h2>		
-											<p>In our network, each node represents a restaurant, a user can review several different restaurants and a restaurant can be reviewed by multiple users. For a  restaurant, the more reviews it has, the higher degree it will have, the size of the node will become bigger. </p>
+											<p>The VADER or ‘Valence Aware Dictionary and sentiment Reasoner’ method uses a sentiment and rule-based lexicon, it is designed to work primarily with text from social media, i.e. tweets, or micro- blogs as it has been described by Hutto and Gilbert (2014). Doing a VADER sentiment analysis on text results in a positive, negative, neutral, and compound score for the text piece. The compound score is the sum of the other three and gives an indication of the general attitude of the text. The score ranges from a negative response = -1 to a positive one = 1. The VADER scores are scaled so a score between 0.5 and 1 is considered positive, a score between -0.5 to 0.5 is considered neutral, and a score below -0.5 is considered negative (Zhou 2019) </p>
 											</header>
-											<a href="#" class="image left"><img src="images/slides/random-network.png" alt="" /></a>
+											<a href="#" class="image design"><img src="images/slides/review length.png" alt="" /></a>
+											
+											<a href="#" class="image design"><img src="images/slides/random-network.png" alt="" /></a>
 											<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
-											<a href="#" class="image right"><img src="images/slides/friend-network.png" alt="" /></a>
+											<a href="#" class="image design"><img src="images/slides/friend-network.png" alt="" /></a>
 											<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipi
+											
+												
 											</p>
+											<div class="gallery">		
+												<header class="major special">
+												<h2>Boxplot</h2>
+												<a href="#" class="image left"><img src="images/slides/random_review_boxplot.png" alt="" /></a>
+												<a href="#" class="image left"><img src="images/slides/friend_review_boxplot.png" alt="" /></a>
+
+												</div>
+											<div class="gallery">		
+													<header class="major special">
+													<h2>Preference</h2>
+													<a href="#" class="image design"><img src="images/slides/preference all.png" alt="" /></a>
+													</div>
+											</li>
 								<li>
 										<h3>Summary</h3>
 										<div class="gallery">
@@ -115,6 +236,17 @@
 												<a href="#" class="image right"><img src="images/slides/friend network.PNG" alt="" /></a>
 												<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipi
 												</p>
+										<div class="gallery">		
+											<header class="major special">
+											<h2>Limitation</h2>
+											<pre><code>location = 0
+
+for i in range(x):
+    i+ = skfjlskfj 
+print (xxxx)
+										
+</code></pre>
+</div>
 													
 									
 								
